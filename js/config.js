@@ -3,21 +3,24 @@ $(function() {
   CMS.init({
 
     // Name of your site or location of logo file, relative to root directory (img/logo.png)
-    siteName: 'My Site',
+    siteName: 'ely.io',
 
     // Tagline for your site
-    siteTagline: 'Your site tagline',
+    siteTagline: 'creativEly presents Mindful Design',
 
     // Email address
-    siteEmail: 'your_email@example.com',
+    siteEmail: 'Ely.Kahn@gmail.com',
 
     // Name
-    siteAuthor: 'Your Name',
+    siteAuthor: 'ely kahn'
 
     // Navigation items
     siteNavItems: [
-      { name: 'Github', href: 'https://github.com/yourname', newWindow: false},
-      { name: 'About'}
+      { name: 'Github', href: 'https://github.com/elykahn', newWindow: false},
+      { name: 'About', href: 'https://elykahn.github.io', newWindow: false},
+      { name: 'Work', href: 'https://elykahn.github.io/work', newWindow: false},
+      { name: 'Resume', href: 'https://elykahn.github.io/resume', newWindow: true},
+
     ],
 
     // Posts folder name
@@ -36,16 +39,16 @@ $(function() {
     postsOnFrontpage: true,
 
     // Page as Frontpage (static)
-    pageAsFrontpage: '',
+    pageAsFrontpage: 'index.html',
 
     // Posts/Blog on different URL
-    postsOnUrl: '',
+    postsOnUrl: '/blog/',
 
     // Site fade speed
     fadeSpeed: 300,
 
     // Site footer text
-    footerText: '&copy; ' + new Date().getFullYear() + ' All Rights Reserved.',
+    footerText: '&copy; ' + siteAuthor + new Date().getFullYear() + ' All Rights Reserved.',
 
     // Mode 'Github' for Github Pages, 'Server' for Self Hosted. Defaults
     // to Github
@@ -54,8 +57,8 @@ $(function() {
     // If Github mode is set, your Github username and repo name. Defaults
     // to Github pages branch (gh-pages)
     githubUserSettings: {
-      username: 'yourusername',
-      repo: 'yourrepo'
+      username: 'elykahn',
+      repo: 'elyiojs'
     }
 
   });
